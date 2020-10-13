@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linear"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="140dp"
+    android:background="@drawable/round_layout">
+    <ImageView
+        android:id="@+id/imgFoodImage"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/round_layout"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fired_rice"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtRecyclerRowItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Food name"
+            />
+
+        <EditText
+            android:id="@+id/etReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_circle"
+            android:hint="Review"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:inputType="text"
+            android:layout_below="@id/FoodRating"
+            />
+        <TextView
+            android:id="@+id/txtFRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/5"
+            android:textSize="15dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@id/txtRecyclerRowItem"
+            android:layout_marginLeft="4dp"
+            />
+        <TextView
+            android:id="@+id/txtFoodCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Rs.250 "
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="130dp"
+            />
+
+        <RatingBar
+            android:id="@+id/FoodRating"
+            style = "?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRecyclerRowItem"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/txtFRating"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressTint="#fff700"
+            android:rating="4"
+            android:stepSize="0.5" />
+
+    </RelativeLayout>
+</LinearLayout>

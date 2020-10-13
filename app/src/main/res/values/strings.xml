@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FoodHub</string>
+    <string name="dashboard">Food Items</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about">About App</string>
+    <string name="navigation_drawer">Navigation drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="favourites_fragment">Favourites Fragment</string>
+    <string name="dashboard_fragment">Dashboard Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
